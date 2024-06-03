@@ -69,7 +69,7 @@ select PACKAGE_luci-lib-ipkg if PACKAGE_$(PKG_NAME)
 
 choice
 	prompt "Uclient SSL Lib Selection"
-	default PACKAGE_$(PKG_NAME)_INCLUDE_libustream-openssl
+	default PACKAGE_$(PKG_NAME)_INCLUDE_PACKAGE_libustream-wolfssl
 	
 	config PACKAGE_$(PKG_NAME)_INCLUDE_libustream-mbedtls
 	bool "libustream-mbedtls"
